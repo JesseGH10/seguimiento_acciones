@@ -14,9 +14,9 @@ A través de filtros dinámicos y visualizaciones interactivas, el usuario puede
 
 🚀 **¡Explora la aplicación directamente desde tu navegador!**
 
-👉 **[Visitar AMZN Stock Pulse Dashboard en Render](PEGA_AQUÍ_TU_ENLACE_DE_RENDER)**
+👉 **[Visitar AMZN Stock Pulse Dashboard en Render](https://seguimiento-acciones-wls6.onrender.com/)**
 
-> 💡 Reemplaza `PEGA_AQUÍ_TU_ENLACE_DE_RENDER` con la URL que te proporcione Render después del despliegue.
+
 
 ---
 
@@ -60,7 +60,7 @@ Si quieres ejecutar el proyecto en tu propio equipo, sigue estos pasos.
 Abre una terminal y ejecuta:
 
 ```bash
-git clone PEGA_AQUÍ_LA_URL_DE_TU_REPOSITORIO
+git clone https://github.com/JesseGH10/seguimiento_acciones.git
 ```
 
 Después, entra a la carpeta del proyecto:
@@ -173,7 +173,7 @@ La aplicación está preparada para ejecutarse en **Render**, permitiendo accede
 
 🌐 **Dashboard público:**
 
-**[🔗 Abrir AMZN Stock Pulse Dashboard](PEGA_AQUÍ_TU_ENLACE_DE_RENDER)**
+**[🔗 Abrir AMZN Stock Pulse Dashboard](https://seguimiento-acciones-wls6.onrender.com/)**
 
 ---
 
