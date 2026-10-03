@@ -1,71 +1,199 @@
 # 📈 AMZN Stock Pulse Dashboard
 
-> **¡Bienvenido a AMZN Stock Pulse!** Una aplicación web interactiva y responsiva diseñada para rastrear, analizar y desglosar el comportamiento financiero de las acciones de Amazon (AMZN) en el periodo de 2020 a 2025. 
+> 🚀 **Dashboard interactivo para explorar y visualizar el comportamiento de las acciones de Amazon (AMZN).**
 
-Este panel de control transforma datos históricos complejos (como precios de apertura, cierres, volúmenes de transacciones y tendencias de mercado) en información visual intuitiva y accionable para la toma de decisiones.
+Este proyecto presenta un **panel de control interactivo** desarrollado con Python, Streamlit y Plotly Express, diseñado para explorar diferentes dimensiones del comportamiento histórico de las acciones de Amazon.
 
----
+A través de filtros dinámicos y visualizaciones interactivas, el usuario puede analizar los datos por **año, tendencia del mercado y días con ganancia**, así como explorar indicadores como el precio de cierre y el volumen de transacciones.
 
-## 🚀 Características Clave
-
-* **Análisis Multidimensional:** Filtra datos por año, tipos de tendencia (*Alcista*, *Bajista*, *Lateral*) o días específicos con ganancias netas.
-* **Exploración de Datos Transparente:** Incluye un visor dinámico para auditar las primeras filas del dataset directamente desde la interfaz.
-* **Métricas en Tiempo Real:** Tarjetas informativas con cálculos automatizados de volumen promedio y precios de cierre.
-* **Visualizaciones de Alto Impacto:** Gráficos totalmente interactivos potenciados por Plotly Express optimizados para pantallas de cualquier tamaño.
+🎯 **Objetivo:** transformar un conjunto de datos financieros en una experiencia visual e interactiva que facilite la exploración y comprensión de los datos.
 
 ---
 
-## 🛠️ Tecnologías Utilizadas
+## 🌐 Ver el Dashboard en línea
 
-El proyecto fue construido utilizando herramientas modernas del ecosistema de Ciencia de Datos en Python:
+🚀 **¡Explora la aplicación directamente desde tu navegador!**
 
-* **[Python](https://python.org):** Lenguaje principal para la manipulación y lógica de filtrado de datos.
-* **[Streamlit](https://streamlit.io):** Framework de código abierto que nos permitió transformar scripts de datos en una aplicación web interactiva en minutos.
-* **[Plotly Express](https://plotly.com):** Biblioteca de graficación interactiva para desplegar histogramas, diagramas de dona y gráficos de barras dinámicos.
-* **[Pandas](https://pydata.org):** El motor principal para la carga, limpieza y segmentación eficiente de estructuras de datos financieras.
+👉 **[Visitar AMZN Stock Pulse Dashboard en Render](PEGA_AQUÍ_TU_ENLACE_DE_RENDER)**
+
+> 💡 Reemplaza `PEGA_AQUÍ_TU_ENLACE_DE_RENDER` con la URL que te proporcione Render después del despliegue.
 
 ---
 
-## 💻 Instalación y Uso en Local
+## 📊 ¿Qué encontrarás en el Dashboard?
 
-Sigue estos sencillos pasos para clonar el repositorio y ejecutar el cuadro de mando en tu propia computadora:
+La aplicación cuenta con diferentes herramientas para explorar el comportamiento de las acciones:
 
-### 1. Clonar el repositorio
-Abre tu terminal y descarga los archivos del proyecto utilizando Git:
+* 📅 **Filtro por año** para seleccionar los periodos de interés.
+* 📈 **Filtro por tendencia** para analizar comportamientos alcistas, bajistas o laterales.
+* 🚀 **Filtro de días con ganancia**.
+* 🔍 **Vista previa interactiva** de los datos filtrados.
+* 📊 **Gráfico de barras** para visualizar el precio máximo de cierre por periodo.
+* 🔵 **Gráfico de dispersión** para explorar la relación entre volumen de transacciones y precio de cierre.
+* 📦 **Histograma** para analizar la distribución del volumen de operaciones.
+* 🖱️ **Visualizaciones interactivas** que se actualizan de acuerdo con los filtros seleccionados.
+
+---
+
+## 🛠️ Tecnologías utilizadas
+
+Este proyecto fue desarrollado utilizando:
+
+| Tecnología            | Uso en el proyecto                                 |
+| --------------------- | -------------------------------------------------- |
+| 🐍 **Python**         | Lenguaje principal de programación                 |
+| 🐼 **Pandas**         | Carga, transformación y filtrado de datos          |
+| 📊 **Plotly Express** | Creación de visualizaciones interactivas           |
+| 🎈 **Streamlit**      | Desarrollo del dashboard y la interfaz web         |
+| 📁 **CSV**            | Fuente de datos del proyecto                       |
+| 🌐 **Render**         | Despliegue de la aplicación web                    |
+| 🔧 **Git / GitHub**   | Control de versiones y almacenamiento del proyecto |
+
+---
+
+## 💻 Instalación y ejecución local
+
+Si quieres ejecutar el proyecto en tu propio equipo, sigue estos pasos.
+
+### 1️⃣ Clona el repositorio
+
+Abre una terminal y ejecuta:
+
 ```bash
-git clone https://github.com
-cd AMZN-Stock-Pulse-Dashboard
+git clone PEGA_AQUÍ_LA_URL_DE_TU_REPOSITORIO
 ```
 
-### 2. Preparar el entorno e instalar dependencias
-Es altamente recomendable utilizar un entorno virtual para mantener limpias tus librerías globales. Instala los requerimientos listados en el proyecto:
+Después, entra a la carpeta del proyecto:
+
+```bash
+cd seguimiento_acciones
+```
+
+---
+
+### 2️⃣ Crea y activa un entorno virtual
+
+Se recomienda utilizar un entorno virtual para mantener aisladas las dependencias del proyecto.
+
+En Windows:
+
+```bash
+python -m venv .venv
+```
+
+Activa el entorno virtual:
+
+```bash
+.venv\Scripts\activate
+```
+
+Si la activación fue correcta, verás `(.venv)` al inicio de la línea de comandos.
+
+---
+
+### 3️⃣ Instala las dependencias
+
+Con el entorno virtual activo, ejecuta:
+
 ```bash
 pip install -r requirements.txt
 ```
 
-### 3. Asegurar la estructura de datos
-Verifica que el archivo de datos históricos se encuentre guardado exactamente en la siguiente ruta relativa:
-```text
-📂 AMZN-Stock-Pulse-Dashboard
- ├── 📂 data
- │    └── 📄 datos.csv   <-- Tu archivo de datos aquí
- └── 📄 app.py
-```
-
-### 4. Lanzar la aplicación
-Enciende el servidor local de Streamlit ejecutando:
-```bash
-streamlit run app.py
-```
-*¡Listo! Tu navegador web predeterminado abrirá automáticamente una pestaña en `http://localhost:8501` mostrando tu panel interactivo.*
+Esto instalará las librerías necesarias para ejecutar la aplicación.
 
 ---
 
-## 📊 Vistas del Dashboard
+### 4️⃣ Inicia el Dashboard
 
-El dashboard se compone de tres visualizaciones dinámicas integradas:
-1. **Precio de Cierre Máximo por Trimestre:** Gráfico de barras verticales diseñado para identificar picos históricos del mercado.
-2. **Proporción de Tendencias:** Gráfico de tipo dona (*Donut Chart*) para evaluar el sesgo de mercado general.
-3. **Distribución del Volumen:** Un histograma enriquecido con un diagrama de caja (*box plot*) superior para rastrear anomalías o picos de volatilidad en las transacciones.
+Finalmente, ejecuta:
 
-> 💡 **Nota para reclutadores y entusiastas:** Este repositorio forma parte de mi portafolio profesional de datos. Si encuentras útil este proyecto o te interesa colaborar en soluciones analíticas similares, ¡no dudes en conectar conmigo o dejar una ⭐️ al repositorio!
+```bash
+streamlit run app.py
+```
+
+Streamlit iniciará la aplicación y mostrará una dirección similar a:
+
+```text
+Local URL: http://localhost:8501
+```
+
+Abre esa dirección en tu navegador para comenzar a explorar el dashboard. 🚀
+
+---
+
+## 📂 Estructura del proyecto
+
+El proyecto está organizado de la siguiente manera:
+
+```text
+seguimiento_acciones/
+│
+├── 📁 data/
+│   └── datos.csv
+│
+├── 📁 notebooks/
+│   └── EDA.ipynb
+│
+├── 📄 app.py
+├── 📄 README.md
+├── 📄 requirements.txt
+└── 📄 .gitignore
+```
+
+### 📌 Componentes principales
+
+* **`app.py`** → contiene la aplicación desarrollada con Streamlit.
+* **`data/datos.csv`** → conjunto de datos utilizado por el dashboard.
+* **`notebooks/EDA.ipynb`** → notebook utilizado para la exploración y análisis inicial de los datos.
+* **`requirements.txt`** → lista de dependencias necesarias para ejecutar el proyecto.
+* **`.gitignore`** → especifica archivos y carpetas que no deben incorporarse al repositorio.
+
+---
+
+## 📈 Visualizaciones
+
+El dashboard utiliza **Plotly Express** para generar visualizaciones interactivas:
+
+> 🔹 **Precio de cierre máximo por trimestre**
+> Permite comparar el comportamiento del precio máximo de cierre entre diferentes periodos.
+
+> 🔹 **Volumen vs. precio de cierre**
+> Explora visualmente la relación entre el volumen de transacciones y el precio de cierre, diferenciando los registros según su tendencia.
+
+> 🔹 **Distribución del volumen de transacciones**
+> Permite identificar la concentración y distribución de los volúmenes registrados.
+
+Todas las visualizaciones responden dinámicamente a los filtros seleccionados por el usuario. 🎯
+
+---
+
+## 🚀 Despliegue
+
+La aplicación está preparada para ejecutarse en **Render**, permitiendo acceder al dashboard desde cualquier navegador sin necesidad de instalar Python o Streamlit localmente.
+
+🌐 **Dashboard público:**
+
+**[🔗 Abrir AMZN Stock Pulse Dashboard](PEGA_AQUÍ_TU_ENLACE_DE_RENDER)**
+
+---
+
+## 🎯 Propósito del proyecto
+
+Este proyecto forma parte de un proceso de aprendizaje y práctica en **Data Science**, con énfasis en:
+
+* 🐍 Programación con Python.
+* 🧹 Manipulación y filtrado de datos.
+* 📊 Visualización de datos.
+* 🌐 Desarrollo de aplicaciones interactivas con Streamlit.
+* 📈 Exploración de datos financieros.
+* 🚀 Despliegue de aplicaciones de datos en la nube.
+
+> 💡 **Del dato a la decisión:** este proyecto busca demostrar cómo Python puede transformar datos estructurados en una herramienta interactiva para explorar información de manera clara y visual.
+
+---
+
+## ⭐ Gracias por visitar el proyecto
+
+Si este proyecto te resulta interesante, puedes explorar el código, probar el dashboard y seguir el proceso de desarrollo.
+
+**¡Gracias por visitar y explorar el AMZN Stock Pulse Dashboard! 🚀📈**
