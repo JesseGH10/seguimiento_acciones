@@ -1,3 +1,8 @@
 streamlit
 plotly
 pandas
+ipython
+ipykernel
+jupyter
+matplotlib
+seaborn
